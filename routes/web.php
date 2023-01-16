@@ -47,5 +47,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 //Route::get('home', 'HomeController@index')->name('home');
-Route::post('settings', 'EmployeeController@insertdata')->name('settings');
 
+Route::post('store-form', [EmployeeController::class, 'insertdata']);
