@@ -1,8 +1,7 @@
 <?php
-use Illuminate\Support\Facades\Route;
 
-//use Illuminate\Support\Facades\Route;
-//use App\Http\Controllers\EmployeeController;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,37 +19,33 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('home', 'HomeController@index')->name('home');
-Route::post('insertdata', 'HomeController@index')->name('insertdata');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Auth::routes();
+Auth::routes();
 
-// // Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// // Auth::routes();
+Auth::routes();
 
-// // Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// // Auth::routes();
+Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
-// Route::get('/land', function () {
-//     return view('form-new')->name('form-new');
-// });
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Auth::routes();
 
- 
-//Route::get('/form', [EmployeeController::class, 'index']);
-// Route::post('/home', 'EmployeeController@index');
-// //Route::get('/store-form', 'EmployeeController@index')->name('insertdata');
-// Route::get('/store-form', EmployeeController::class)->name('insertdata');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Route::post('store-form', [EmployeeController::class, 'insertdata']);
-//Route::post('/store-form', EmployeeController)->name('insertdata');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-//Route::post('homes', [EmployeeController::class, 'insertdata'])->name('insertdata');
-       // Route::post('/homes', 'EmployeeController@insertdata');
-//Route::post('insertdata', [EmployeeController::class, 'insertdata'])->name('insertdata');
-
+//Route::get('home', 'HomeController@index')->name('home');
+Route::post('settings', 'EmployeeController@insertdata')->name('settings');
 
